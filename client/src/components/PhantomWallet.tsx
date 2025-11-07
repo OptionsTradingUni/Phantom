@@ -7,12 +7,12 @@ import TokenListItem from './TokenListItem';
 import BottomNavigation from './BottomNavigation';
 import { ChevronRight, Download } from 'lucide-react';
 import clippyIcon from '@assets/IMG_5070_1762517854497.jpeg';
-import solanaIcon from '@assets/stock_images/solana_sol_cryptocur_7f7961d1.jpg';
-import usdtIcon from '@assets/stock_images/tether_usdt_cryptocu_97637975.jpg';
-import jupiterIcon from '@assets/stock_images/jupiter_jup_cryptocu_f0933738.jpg';
-import bonkIcon from '@assets/stock_images/bonk_dog_meme_crypto_48664918.jpg';
-import pythIcon from '@assets/stock_images/pyth_network_cryptoc_dcae9149.jpg';
-import raydiumIcon from '@assets/stock_images/raydium_ray_cryptocu_fec3bd41.jpg';
+import solanaIcon from '@assets/IMG_5073_1762518833458.jpeg';
+import usdtIcon from '@assets/IMG_5074_1762518833458.jpeg';
+import jupiterIcon from '@assets/IMG_5075_1762518833458.jpeg';
+import bonkIcon from '@assets/IMG_5076_1762518833458.jpeg';
+import pythIcon from '@assets/IMG_5077_1762518833458.png';
+import raydiumIcon from '@assets/IMG_5078_1762518833458.jpeg';
 
 interface Token {
   icon: string;
