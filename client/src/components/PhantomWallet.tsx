@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import html2canvas from 'html2canvas';
 import WalletHeader from './WalletHeader';
 import BalanceDisplay from './BalanceDisplay';
@@ -27,14 +27,41 @@ export default function PhantomWallet() {
   const walletRef = useRef<HTMLDivElement>(null);
   const [username, setUsername] = useState('@TheWealthPrince1');
   const [walletName, setWalletName] = useState('Side Wallet');
+  const [solPrice, setSolPrice] = useState(155); // Default price
+  
+  // Fetch live Solana price from CoinGecko (free, no API key needed)
+  useEffect(() => {
+    const fetchSolPrice = async () => {
+      try {
+        const response = await fetch(
+          'https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd'
+        );
+        const data = await response.json();
+        if (data.solana?.usd) {
+          setSolPrice(data.solana.usd);
+        }
+      } catch (error) {
+        console.error('Failed to fetch SOL price:', error);
+        // Keep default price if fetch fails
+      }
+    };
+    
+    fetchSolPrice();
+    // Update price every 60 seconds
+    const interval = setInterval(fetchSolPrice, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const solAmount = 2595.79;
+  const solValue = solAmount * solPrice;
 
   const tokens: Token[] = [
     {
       icon: solanaIcon,
       name: 'Solana',
-      amount: 2595.79, // Current SOL price ~$155
+      amount: solAmount,
       symbol: 'SOL',
-      value: 402347.83,
+      value: solValue,
       change: -816.47,
     },
     {
