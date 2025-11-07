@@ -7,6 +7,12 @@ import TokenListItem from './TokenListItem';
 import BottomNavigation from './BottomNavigation';
 import { ChevronRight, Download } from 'lucide-react';
 import clippyIcon from '@assets/IMG_5070_1762517854497.jpeg';
+import solanaIcon from '@assets/stock_images/solana_sol_cryptocur_7f7961d1.jpg';
+import usdtIcon from '@assets/stock_images/tether_usdt_cryptocu_97637975.jpg';
+import jupiterIcon from '@assets/stock_images/jupiter_jup_cryptocu_f0933738.jpg';
+import bonkIcon from '@assets/stock_images/bonk_dog_meme_crypto_48664918.jpg';
+import pythIcon from '@assets/stock_images/pyth_network_cryptoc_dcae9149.jpg';
+import raydiumIcon from '@assets/stock_images/raydium_ray_cryptocu_fec3bd41.jpg';
 
 interface Token {
   icon: string;
@@ -22,7 +28,7 @@ export default function PhantomWallet() {
 
   const tokens: Token[] = [
     {
-      icon: 'https://cryptologos.cc/logos/solana-sol-logo.png',
+      icon: solanaIcon,
       name: 'Solana',
       amount: 2040.816326530612, // $400k / ~$196 per SOL
       symbol: 'SOL',
@@ -30,7 +36,7 @@ export default function PhantomWallet() {
       change: -816.32,
     },
     {
-      icon: 'https://cryptologos.cc/logos/tether-usdt-logo.png',
+      icon: usdtIcon,
       name: 'USDT',
       amount: 75000.00,
       symbol: 'USDT',
@@ -46,7 +52,7 @@ export default function PhantomWallet() {
       change: 3200.45,
     },
     {
-      icon: 'https://cryptologos.cc/logos/jupiter-jup-logo.png',
+      icon: jupiterIcon,
       name: 'Jupiter',
       amount: 12500.00,
       symbol: 'JUP',
@@ -54,7 +60,7 @@ export default function PhantomWallet() {
       change: 892.15,
     },
     {
-      icon: 'https://cryptologos.cc/logos/bonk-bonk-logo.png',
+      icon: bonkIcon,
       name: 'Bonk',
       amount: 8500000.00,
       symbol: 'BONK',
@@ -62,7 +68,7 @@ export default function PhantomWallet() {
       change: -345.20,
     },
     {
-      icon: 'https://cryptologos.cc/logos/pyth-network-pyth-logo.png',
+      icon: pythIcon,
       name: 'Pyth Network',
       amount: 25000.00,
       symbol: 'PYTH',
@@ -70,7 +76,7 @@ export default function PhantomWallet() {
       change: 156.80,
     },
     {
-      icon: 'https://cryptologos.cc/logos/raydium-ray-logo.png',
+      icon: raydiumIcon,
       name: 'Raydium',
       amount: 850.00,
       symbol: 'RAY',
