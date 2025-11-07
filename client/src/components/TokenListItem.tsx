@@ -27,10 +27,10 @@ export default function TokenListItem({ icon, name, amount, symbol, value, chang
       </div>
       <div className="text-right">
         <p className="text-white font-semibold text-base">
-          ${value.toFixed(2)}
+          ${value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
         </p>
         <p className={`text-sm font-medium ${isNegative ? 'text-red-500' : 'text-green-500'}`}>
-          {isNegative ? '-' : '+'}${Math.abs(change).toFixed(2)}
+          {isNegative ? '-' : '+'}${Math.abs(change).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
         </p>
       </div>
     </button>
