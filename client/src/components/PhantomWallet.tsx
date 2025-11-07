@@ -6,7 +6,7 @@ import ActionButtons from './ActionButtons';
 import TokenListItem from './TokenListItem';
 import BottomNavigation from './BottomNavigation';
 import { ChevronRight, Download } from 'lucide-react';
-import clippyIcon from '@assets/IMG_5070_1762517854497.jpeg';
+import clippyIcon from '@assets/IMG_5016_1762530333254.jpeg';
 import solanaIcon from '@assets/IMG_5073_1762518833458.jpeg';
 import usdtIcon from '@assets/IMG_5074_1762518833458.jpeg';
 import jupiterIcon from '@assets/IMG_5075_1762518833458.jpeg';
@@ -32,9 +32,9 @@ export default function PhantomWallet() {
     {
       icon: solanaIcon,
       name: 'Solana',
-      amount: 2040.816326530612, // $400k / ~$196 per SOL
+      amount: 2595.79, // Current SOL price ~$155
       symbol: 'SOL',
-      value: 400247.83,
+      value: 402347.83,
       change: -816.47,
     },
     {
