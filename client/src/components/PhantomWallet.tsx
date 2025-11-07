@@ -34,7 +34,7 @@ export default function PhantomWallet() {
       name: 'Solana',
       amount: 2040.816326530612, // $400k / ~$196 per SOL
       symbol: 'SOL',
-      value: 400000.00,
+      value: 400247.83,
       change: -816.47,
     },
     {
@@ -42,7 +42,7 @@ export default function PhantomWallet() {
       name: 'USDT',
       amount: 75000.00,
       symbol: 'USDT',
-      value: 75000.00,
+      value: 75183.26,
       change: -15.83,
     },
     {
@@ -50,7 +50,7 @@ export default function PhantomWallet() {
       name: 'Clippy PFF',
       amount: 55327132.50, // $150k / $0.002711
       symbol: 'PFF',
-      value: 150000.00,
+      value: 150892.14,
       change: 3200.67,
     },
     {
@@ -58,7 +58,7 @@ export default function PhantomWallet() {
       name: 'Jupiter',
       amount: 12500.00,
       symbol: 'JUP',
-      value: 45632.50,
+      value: 45632.58,
       change: 892.38,
     },
     {
@@ -66,7 +66,7 @@ export default function PhantomWallet() {
       name: 'Bonk',
       amount: 8500000.00,
       symbol: 'BONK',
-      value: 18700.00,
+      value: 18754.37,
       change: -345.91,
     },
     {
@@ -74,7 +74,7 @@ export default function PhantomWallet() {
       name: 'Pyth Network',
       amount: 25000.00,
       symbol: 'PYTH',
-      value: 9800.00,
+      value: 9876.49,
       change: 156.24,
     },
     {
@@ -82,7 +82,7 @@ export default function PhantomWallet() {
       name: 'Raydium',
       amount: 850.00,
       symbol: 'RAY',
-      value: 2000.00,
+      value: 2043.71,
       change: -42.57,
     },
   ];
