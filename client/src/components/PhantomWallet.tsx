@@ -113,13 +113,13 @@ export default function PhantomWallet() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center p-4">
       <div className="w-full max-w-md">
-        <div className="mb-6 space-y-4 bg-card p-6 rounded-xl border border-card-border">
-          <h2 className="text-lg font-semibold text-foreground mb-4">Customize Wallet</h2>
+        <div className="mb-6 space-y-4 bg-[#1a1a1a] p-6 rounded-xl border border-gray-800">
+          <h2 className="text-lg font-semibold text-white mb-4">Customize Wallet</h2>
           <div className="space-y-3">
             <div>
-              <label htmlFor="username" className="block text-sm font-medium text-muted-foreground mb-2">
+              <label htmlFor="username" className="block text-sm font-medium text-gray-400 mb-2">
                 Username
               </label>
               <input
@@ -128,12 +128,12 @@ export default function PhantomWallet() {
                 data-testid="input-username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="w-full px-3 py-2 bg-background border border-input rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full px-3 py-2 bg-[#0a0a0a] border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
                 placeholder="@username"
               />
             </div>
             <div>
-              <label htmlFor="walletName" className="block text-sm font-medium text-muted-foreground mb-2">
+              <label htmlFor="walletName" className="block text-sm font-medium text-gray-400 mb-2">
                 Wallet Name
               </label>
               <input
@@ -142,7 +142,7 @@ export default function PhantomWallet() {
                 data-testid="input-wallet-name"
                 value={walletName}
                 onChange={(e) => setWalletName(e.target.value)}
-                className="w-full px-3 py-2 bg-background border border-input rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full px-3 py-2 bg-[#0a0a0a] border border-gray-700 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
                 placeholder="Wallet name"
               />
             </div>
