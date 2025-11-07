@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import html2canvas from 'html2canvas';
 import WalletHeader from './WalletHeader';
 import BalanceDisplay from './BalanceDisplay';
@@ -25,6 +25,8 @@ interface Token {
 
 export default function PhantomWallet() {
   const walletRef = useRef<HTMLDivElement>(null);
+  const [username, setUsername] = useState('@TheWealthPrince1');
+  const [walletName, setWalletName] = useState('Side Wallet');
 
   const tokens: Token[] = [
     {
@@ -113,6 +115,40 @@ export default function PhantomWallet() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <div className="w-full max-w-md">
+        <div className="mb-6 space-y-4 bg-card p-6 rounded-xl border border-card-border">
+          <h2 className="text-lg font-semibold text-foreground mb-4">Customize Wallet</h2>
+          <div className="space-y-3">
+            <div>
+              <label htmlFor="username" className="block text-sm font-medium text-muted-foreground mb-2">
+                Username
+              </label>
+              <input
+                id="username"
+                type="text"
+                data-testid="input-username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                className="w-full px-3 py-2 bg-background border border-input rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="@username"
+              />
+            </div>
+            <div>
+              <label htmlFor="walletName" className="block text-sm font-medium text-muted-foreground mb-2">
+                Wallet Name
+              </label>
+              <input
+                id="walletName"
+                type="text"
+                data-testid="input-wallet-name"
+                value={walletName}
+                onChange={(e) => setWalletName(e.target.value)}
+                className="w-full px-3 py-2 bg-background border border-input rounded-md text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                placeholder="Wallet name"
+              />
+            </div>
+          </div>
+        </div>
+
         <div className="mb-4 flex justify-end">
           <button
             data-testid="button-download"
@@ -147,7 +183,7 @@ export default function PhantomWallet() {
             </div>
           </div>
 
-          <WalletHeader username="@TheWealthPrince1" walletName="Side Wallet" />
+          <WalletHeader username={username} walletName={walletName} />
           
           <BalanceDisplay 
             totalBalance={totalValue} 
