@@ -35,7 +35,7 @@ export default function PhantomWallet() {
       amount: 2040.816326530612, // $400k / ~$196 per SOL
       symbol: 'SOL',
       value: 400000.00,
-      change: -816.32,
+      change: -816.47,
     },
     {
       icon: usdtIcon,
@@ -43,7 +43,7 @@ export default function PhantomWallet() {
       amount: 75000.00,
       symbol: 'USDT',
       value: 75000.00,
-      change: -15.30,
+      change: -15.83,
     },
     {
       icon: clippyIcon,
@@ -51,7 +51,7 @@ export default function PhantomWallet() {
       amount: 55327132.50, // $150k / $0.002711
       symbol: 'PFF',
       value: 150000.00,
-      change: 3200.45,
+      change: 3200.67,
     },
     {
       icon: jupiterIcon,
@@ -59,7 +59,7 @@ export default function PhantomWallet() {
       amount: 12500.00,
       symbol: 'JUP',
       value: 45632.50,
-      change: 892.15,
+      change: 892.38,
     },
     {
       icon: bonkIcon,
@@ -67,7 +67,7 @@ export default function PhantomWallet() {
       amount: 8500000.00,
       symbol: 'BONK',
       value: 18700.00,
-      change: -345.20,
+      change: -345.91,
     },
     {
       icon: pythIcon,
@@ -75,7 +75,7 @@ export default function PhantomWallet() {
       amount: 25000.00,
       symbol: 'PYTH',
       value: 9800.00,
-      change: 156.80,
+      change: 156.24,
     },
     {
       icon: raydiumIcon,
@@ -83,7 +83,7 @@ export default function PhantomWallet() {
       amount: 850.00,
       symbol: 'RAY',
       value: 2000.00,
-      change: -42.30,
+      change: -42.57,
     },
   ];
 
